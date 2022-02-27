@@ -1,0 +1,83 @@
+body {
+    background-color: darkblue;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5% 0 5%;
+}
+h1,p {
+    color: yellow;
+}
+nav {
+    background-color: blue;
+}
+ul {
+    padding-left: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+li {
+    text-align: center;
+    width: 25%;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+nav .current {
+    text-decoration: underline;
+    color: black;
+}
+a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: yellow;
+}
+p {
+    max-width:60ch;
+}
+div {
+    color: yellow;
+    display: grid;
+    grid-template-columns: 3em 3em 3em 3em 3em 3em;
+    grid-template-rows: 4em 4em 4em 4em;
+    grid-auto-columns: 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.container{
+    margin-top: 2em;
+}
+.Center-Ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article {
+    background-color: yellow;
+    color: blue;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+}
+form {
+    color: yellow;
+}
+footer {
+    color: white;
+    position:absolute;
+    bottom:10px;
+
+}
+
+@media only screen and (max-width: 1000px){
+    article {font-size: 170%;}
+    form {font-size: 150%;}
+}
